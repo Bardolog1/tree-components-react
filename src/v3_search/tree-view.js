@@ -6,7 +6,7 @@ const TreeNode = ({ node }) => {
   return (
     <div
       className="tree-node"
-      style={{ color: node.isHighlight ? "red" : "initial" }}
+      style={{ color: node.isHighlight ? "#059200" : "initial", fontWeight: node.isHighlight ? "500" : "200"}}
     >
       {node.children && (
         <button
@@ -19,7 +19,7 @@ const TreeNode = ({ node }) => {
           }
           className="toggle-icon"
         >
-          {node.isExpanded ? "⮝" : "⮟"}
+          {node.isExpanded ? <i class="fa-regular fa-circle-up"></i> : <i class="fa-regular fa-circle-down"></i>}
         </button>
       )}
       <span>{node.name}</span>

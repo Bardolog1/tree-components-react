@@ -28,10 +28,10 @@ function MainApp() {
         onChange={onHandleSearch}
       />
       <div>
-        <button onClick={() => dispatch({ type: "EXPAND_ALL" })}>
+        <button className="btn-open" onClick={() => dispatch({ type: "EXPAND_ALL" })}>
           Expand All
         </button>
-        <button onClick={() => dispatch({ type: "COLLAPSE_ALL" })}>
+        <button className="btn-close" onClick={() => dispatch({ type: "COLLAPSE_ALL" })}>
           Collapse All
         </button>
       </div>
